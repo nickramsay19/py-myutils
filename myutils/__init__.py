@@ -90,7 +90,7 @@ class utils:
         return (lambda d : [(n - cls.mean(d))/cls.standard_deviation_population(d) for n in d])(data)
 
     @classmethod
-    def standardise_population_data(cls, data: list) -> list:
+    def standardise_sample_data(cls, data: list) -> list:
         """
             Converts each value of a set of sample values to their coressponding z-scores.
 
